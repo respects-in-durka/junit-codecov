@@ -6,11 +6,11 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Setup java
-    - uses: actions/setup-java@v2
+      uses: actions/setup-java@v2
       with:
         distribution: 'temurin'
         java-version: '11'
     - name: Install dependencies
-    - run: gradle install && gradle test
+      run: gradle install && gradle test
     - name: Upload coverage to Codecov
-    - run: bash <(curl -s https://codecov.io/bash)
+      run: bash <(curl -s https://codecov.io/bash)
