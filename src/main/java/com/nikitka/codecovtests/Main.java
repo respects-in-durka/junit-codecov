@@ -1,8 +1,12 @@
 package com.nikitka.codecovtests;
 
 public class Main {
+    int a;
+    private String b;
+    protected double c;
+    public float d;
 
-    public static String getMessage() {
-        return "Hello, World!";
+    private String privateString() {
+        return "private";
     }
 }
