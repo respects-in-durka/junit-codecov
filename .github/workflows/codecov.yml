@@ -11,6 +11,6 @@ jobs:
         distribution: 'temurin'
         java-version: '11'
     - name: Install dependencies
-      run: gradle install && gradle test
+      run: gradle build && gradle test
     - name: Upload coverage to Codecov
       run: bash <(curl -s https://codecov.io/bash)
